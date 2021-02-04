@@ -1,0 +1,6 @@
+framework module Pods_WOPT_WOPTUITests {
+  umbrella header "Pods-WOPT-WOPTUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

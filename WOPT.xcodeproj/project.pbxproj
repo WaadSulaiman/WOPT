@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29FFC710C5220DD50AB50B44 /* Pods_WOPTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A62EC34193924A630C31BE /* Pods_WOPTTests.framework */; };
+		33F4A02389194538BDED1048 /* Pods_WOPT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D07A520B58A7DB8E8C57E3 /* Pods_WOPT.framework */; };
+		59CF4987411E8088616D0428 /* Pods_WOPT_WOPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */; };
+		8272EAA325CC3B9900144ABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */; };
 		970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E225CC2E0200366D17 /* WOPTApp.swift */; };
 		970720E525CC2E0200366D17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* ContentView.swift */; };
 		970720E725CC2E0300366D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970720E625CC2E0300366D17 /* Assets.xcassets */; };
@@ -33,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03850BA7D1143284AEE0CF0A /* Pods-WOPTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPTTests.release.xcconfig"; path = "Target Support Files/Pods-WOPTTests/Pods-WOPTTests.release.xcconfig"; sourceTree = "<group>"; };
+		10D07A520B58A7DB8E8C57E3 /* Pods_WOPT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A62EC34193924A630C31BE /* Pods_WOPTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6A6BB55C7566A14A5FE371 /* Pods-WOPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT.release.xcconfig"; path = "Target Support Files/Pods-WOPT/Pods-WOPT.release.xcconfig"; sourceTree = "<group>"; };
+		5728A9730D5C9D5E632AF184 /* Pods-WOPT-WOPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT-WOPTUITests.release.xcconfig"; path = "Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT_WOPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720DF25CC2E0200366D17 /* WOPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720E225CC2E0200366D17 /* WOPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOPTApp.swift; sourceTree = "<group>"; };
 		970720E425CC2E0200366D17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +56,9 @@
 		970720FB25CC2E0300366D17 /* WOPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720FF25CC2E0300366D17 /* WOPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOPTUITests.swift; sourceTree = "<group>"; };
 		9707210125CC2E0300366D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37C6DD9CCA2C15C94195B34 /* Pods-WOPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPTTests.debug.xcconfig"; path = "Target Support Files/Pods-WOPTTests/Pods-WOPTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A151EAB355D2029D6DD1EA /* Pods-WOPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT.debug.xcconfig"; path = "Target Support Files/Pods-WOPT/Pods-WOPT.debug.xcconfig"; sourceTree = "<group>"; };
+		ED28EB7F308C394398625290 /* Pods-WOPT-WOPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT-WOPTUITests.debug.xcconfig"; path = "Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F4A02389194538BDED1048 /* Pods_WOPT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FFC710C5220DD50AB50B44 /* Pods_WOPTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +82,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59CF4987411E8088616D0428 /* Pods_WOPT_WOPTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		429760F5A7730E531FC8C59E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7A151EAB355D2029D6DD1EA /* Pods-WOPT.debug.xcconfig */,
+				4C6A6BB55C7566A14A5FE371 /* Pods-WOPT.release.xcconfig */,
+				ED28EB7F308C394398625290 /* Pods-WOPT-WOPTUITests.debug.xcconfig */,
+				5728A9730D5C9D5E632AF184 /* Pods-WOPT-WOPTUITests.release.xcconfig */,
+				C37C6DD9CCA2C15C94195B34 /* Pods-WOPTTests.debug.xcconfig */,
+				03850BA7D1143284AEE0CF0A /* Pods-WOPTTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		970720D625CC2E0200366D17 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +110,8 @@
 				970720F325CC2E0300366D17 /* WOPTTests */,
 				970720FE25CC2E0300366D17 /* WOPTUITests */,
 				970720E025CC2E0200366D17 /* Products */,
+				429760F5A7730E531FC8C59E /* Pods */,
+				9B620F8FAEAF7B1346B4092A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +128,7 @@
 		970720E125CC2E0200366D17 /* WOPT */ = {
 			isa = PBXGroup;
 			children = (
+				8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */,
 				970720E225CC2E0200366D17 /* WOPTApp.swift */,
 				970720E425CC2E0200366D17 /* ContentView.swift */,
 				970720E625CC2E0300366D17 /* Assets.xcassets */,
@@ -130,6 +164,16 @@
 			path = WOPTUITests;
 			sourceTree = "<group>";
 		};
+		9B620F8FAEAF7B1346B4092A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10D07A520B58A7DB8E8C57E3 /* Pods_WOPT.framework */,
+				8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */,
+				37A62EC34193924A630C31BE /* Pods_WOPTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9707210425CC2E0300366D17 /* Build configuration list for PBXNativeTarget "WOPT" */;
 			buildPhases = (
+				EB63548E8DE60F7BDDB91B06 /* [CP] Check Pods Manifest.lock */,
 				970720DB25CC2E0200366D17 /* Sources */,
 				970720DC25CC2E0200366D17 /* Frameworks */,
 				970720DD25CC2E0200366D17 /* Resources */,
+				7BD99ADFDFAE64A229C33470 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9707210725CC2E0300366D17 /* Build configuration list for PBXNativeTarget "WOPTTests" */;
 			buildPhases = (
+				842CF5EDE0D4A9C3EB152C4B /* [CP] Check Pods Manifest.lock */,
 				970720EC25CC2E0300366D17 /* Sources */,
 				970720ED25CC2E0300366D17 /* Frameworks */,
 				970720EE25CC2E0300366D17 /* Resources */,
@@ -172,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9707210A25CC2E0300366D17 /* Build configuration list for PBXNativeTarget "WOPTUITests" */;
 			buildPhases = (
+				8B6A27CBA65938715C9AB076 /* [CP] Check Pods Manifest.lock */,
 				970720F725CC2E0300366D17 /* Sources */,
 				970720F825CC2E0300366D17 /* Frameworks */,
 				970720F925CC2E0300366D17 /* Resources */,
+				3AB5DA6A7B971B713B2CF105 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +284,7 @@
 			files = (
 				970720EA25CC2E0300366D17 /* Preview Assets.xcassets in Resources */,
 				970720E725CC2E0300366D17 /* Assets.xcassets in Resources */,
+				8272EAA325CC3B9900144ABF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +303,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AB5DA6A7B971B713B2CF105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BD99ADFDFAE64A229C33470 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WOPT/Pods-WOPT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WOPT/Pods-WOPT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WOPT/Pods-WOPT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		842CF5EDE0D4A9C3EB152C4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WOPTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B6A27CBA65938715C9AB076 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WOPT-WOPTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB63548E8DE60F7BDDB91B06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WOPT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		970720DB25CC2E0200366D17 /* Sources */ = {
@@ -414,6 +567,7 @@
 		};
 		9707210525CC2E0300366D17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A151EAB355D2029D6DD1EA /* Pods-WOPT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,7 +580,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.realdeveloperx.WOPT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wopt.WOPT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,6 +589,7 @@
 		};
 		9707210625CC2E0300366D17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6A6BB55C7566A14A5FE371 /* Pods-WOPT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +602,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.realdeveloperx.WOPT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wopt.WOPT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,6 +611,7 @@
 		};
 		9707210825CC2E0300366D17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37C6DD9CCA2C15C94195B34 /* Pods-WOPTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -477,6 +633,7 @@
 		};
 		9707210925CC2E0300366D17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03850BA7D1143284AEE0CF0A /* Pods-WOPTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +655,7 @@
 		};
 		9707210B25CC2E0300366D17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED28EB7F308C394398625290 /* Pods-WOPT-WOPTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +675,7 @@
 		};
 		9707210C25CC2E0300366D17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5728A9730D5C9D5E632AF184 /* Pods-WOPT-WOPTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

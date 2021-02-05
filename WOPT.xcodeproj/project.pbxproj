@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -99,7 +99,6 @@
 				C37C6DD9CCA2C15C94195B34 /* Pods-WOPTTests.debug.xcconfig */,
 				03850BA7D1143284AEE0CF0A /* Pods-WOPTTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -573,6 +572,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WOPT/Preview Content\"";
+				DEVELOPMENT_TEAM = JC6AT8Q44G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WOPT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -595,6 +595,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WOPT/Preview Content\"";
+				DEVELOPMENT_TEAM = JC6AT8Q44G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WOPT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

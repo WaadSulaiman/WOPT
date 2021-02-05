@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+
 
 @main
 struct WOPTApp: App {

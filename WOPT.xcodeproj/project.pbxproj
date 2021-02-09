@@ -11,8 +11,9 @@
 		33F4A02389194538BDED1048 /* Pods_WOPT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D07A520B58A7DB8E8C57E3 /* Pods_WOPT.framework */; };
 		59CF4987411E8088616D0428 /* Pods_WOPT_WOPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */; };
 		8272EAA325CC3B9900144ABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */; };
+		8746F06325D2AE3B0066E67D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F06225D2AE3B0066E67D /* Meal.swift */; };
 		970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E225CC2E0200366D17 /* WOPTApp.swift */; };
-		970720E525CC2E0200366D17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* ContentView.swift */; };
+		970720E525CC2E0200366D17 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* MealListView.swift */; };
 		970720E725CC2E0300366D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970720E625CC2E0300366D17 /* Assets.xcassets */; };
 		970720EA25CC2E0300366D17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970720E925CC2E0300366D17 /* Preview Assets.xcassets */; };
 		970720F525CC2E0300366D17 /* WOPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720F425CC2E0300366D17 /* WOPTTests.swift */; };
@@ -43,10 +44,11 @@
 		4C6A6BB55C7566A14A5FE371 /* Pods-WOPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT.release.xcconfig"; path = "Target Support Files/Pods-WOPT/Pods-WOPT.release.xcconfig"; sourceTree = "<group>"; };
 		5728A9730D5C9D5E632AF184 /* Pods-WOPT-WOPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT-WOPTUITests.release.xcconfig"; path = "Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8746F06225D2AE3B0066E67D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT_WOPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720DF25CC2E0200366D17 /* WOPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720E225CC2E0200366D17 /* WOPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOPTApp.swift; sourceTree = "<group>"; };
-		970720E425CC2E0200366D17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		970720E425CC2E0200366D17 /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
 		970720E625CC2E0300366D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		970720E925CC2E0300366D17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		970720EB25CC2E0300366D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +104,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8746F06125D2AE0A0066E67D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8746F06225D2AE3B0066E67D /* Meal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8746F06725D2AFB90066E67D /* App?Delegate? */ = {
+			isa = PBXGroup;
+			children = (
+				8746F06825D2AFCB0066E67D /* Views */,
+			);
+			path = "App?Delegate?";
+			sourceTree = "<group>";
+		};
+		8746F06825D2AFCB0066E67D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				970720E425CC2E0200366D17 /* MealListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		970720D625CC2E0200366D17 = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +153,10 @@
 		970720E125CC2E0200366D17 /* WOPT */ = {
 			isa = PBXGroup;
 			children = (
+				8746F06725D2AFB90066E67D /* App?Delegate? */,
+				8746F06125D2AE0A0066E67D /* Model */,
 				8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */,
 				970720E225CC2E0200366D17 /* WOPTApp.swift */,
-				970720E425CC2E0200366D17 /* ContentView.swift */,
 				970720E625CC2E0300366D17 /* Assets.xcassets */,
 				970720EB25CC2E0300366D17 /* Info.plist */,
 				970720E825CC2E0300366D17 /* Preview Content */,
@@ -411,7 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				970720E525CC2E0200366D17 /* ContentView.swift in Sources */,
+				970720E525CC2E0200366D17 /* MealListView.swift in Sources */,
+				8746F06325D2AE3B0066E67D /* Meal.swift in Sources */,
 				970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

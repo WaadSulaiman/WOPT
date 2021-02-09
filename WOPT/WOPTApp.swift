@@ -13,7 +13,7 @@ import Firebase
 struct WOPTApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MealListView()
         }
     }
 }

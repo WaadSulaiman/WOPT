@@ -12,16 +12,17 @@
 		59CF4987411E8088616D0428 /* Pods_WOPT_WOPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */; };
 		8272EAA325CC3B9900144ABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */; };
 		8746F06325D2AE3B0066E67D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F06225D2AE3B0066E67D /* Meal.swift */; };
-		8746F07E25D2D0230066E67D /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F07D25D2D0230066E67D /* WorkoutListView.swift */; };
-		8746F08625D2D04E0066E67D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F08525D2D04E0066E67D /* RegisterView.swift */; };
-		8746F08B25D2D0620066E67D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F08A25D2D0620066E67D /* MainPageView.swift */; };
-		8746F09325D2D0B80066E67D /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F09225D2D0B80066E67D /* SessionView.swift */; };
 		970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E225CC2E0200366D17 /* WOPTApp.swift */; };
 		970720E525CC2E0200366D17 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* MealListView.swift */; };
 		970720E725CC2E0300366D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970720E625CC2E0300366D17 /* Assets.xcassets */; };
 		970720EA25CC2E0300366D17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970720E925CC2E0300366D17 /* Preview Assets.xcassets */; };
 		970720F525CC2E0300366D17 /* WOPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720F425CC2E0300366D17 /* WOPTTests.swift */; };
 		9707210025CC2E0300366D17 /* WOPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720FF25CC2E0300366D17 /* WOPTUITests.swift */; };
+		97A6EFA925D4F29D00E7FC55 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFA825D4F29D00E7FC55 /* SessionView.swift */; };
+		97A6EFB125D4F2B400E7FC55 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFB025D4F2B400E7FC55 /* MainPageView.swift */; };
+		97A6EFB625D4F2E900E7FC55 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFB525D4F2E900E7FC55 /* RegisterView.swift */; };
+		97A6EFBB25D4F33400E7FC55 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFBA25D4F33400E7FC55 /* WorkoutListView.swift */; };
+		97A6EFC025D4F39900E7FC55 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFBF25D4F39900E7FC55 /* MainPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +50,6 @@
 		5728A9730D5C9D5E632AF184 /* Pods-WOPT-WOPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT-WOPTUITests.release.xcconfig"; path = "Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8746F06225D2AE3B0066E67D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		8746F07D25D2D0230066E67D /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
-		8746F08525D2D04E0066E67D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		8746F08A25D2D0620066E67D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
-		8746F09225D2D0B80066E67D /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT_WOPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720DF25CC2E0200366D17 /* WOPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720E225CC2E0200366D17 /* WOPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOPTApp.swift; sourceTree = "<group>"; };
@@ -66,6 +63,11 @@
 		970720FB25CC2E0300366D17 /* WOPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720FF25CC2E0300366D17 /* WOPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOPTUITests.swift; sourceTree = "<group>"; };
 		9707210125CC2E0300366D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A6EFA825D4F29D00E7FC55 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		97A6EFB025D4F2B400E7FC55 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		97A6EFB525D4F2E900E7FC55 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		97A6EFBA25D4F33400E7FC55 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		97A6EFBF25D4F39900E7FC55 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		C37C6DD9CCA2C15C94195B34 /* Pods-WOPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPTTests.debug.xcconfig"; path = "Target Support Files/Pods-WOPTTests/Pods-WOPTTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A151EAB355D2029D6DD1EA /* Pods-WOPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT.debug.xcconfig"; path = "Target Support Files/Pods-WOPT/Pods-WOPT.debug.xcconfig"; sourceTree = "<group>"; };
 		ED28EB7F308C394398625290 /* Pods-WOPT-WOPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT-WOPTUITests.debug.xcconfig"; path = "Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,30 +122,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8746F06725D2AFB90066E67D /* App?Delegate? */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "App?Delegate?";
-			sourceTree = "<group>";
-		};
 		8746F06825D2AFCB0066E67D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				970720E425CC2E0200366D17 /* MealListView.swift */,
-				8746F07D25D2D0230066E67D /* WorkoutListView.swift */,
-				8746F08525D2D04E0066E67D /* RegisterView.swift */,
-				8746F08A25D2D0620066E67D /* MainPageView.swift */,
-				8746F09225D2D0B80066E67D /* SessionView.swift */,
+				97A6EFBA25D4F33400E7FC55 /* WorkoutListView.swift */,
+				97A6EFB525D4F2E900E7FC55 /* RegisterView.swift */,
+				97A6EFB025D4F2B400E7FC55 /* MainPageView.swift */,
+				97A6EFA825D4F29D00E7FC55 /* SessionView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		8746F06F25D2CF650066E67D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		970720D625CC2E0200366D17 = {
@@ -171,14 +159,14 @@
 		970720E125CC2E0200366D17 /* WOPT */ = {
 			isa = PBXGroup;
 			children = (
-				8746F06F25D2CF650066E67D /* ViewModel */,
-				8746F06725D2AFB90066E67D /* App?Delegate? */,
+				97A6EFA725D4F1E600E7FC55 /* Repositories */,
 				8746F06125D2AE0A0066E67D /* Model */,
 				8746F06825D2AFCB0066E67D /* Views */,
-				8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */,
 				970720E225CC2E0200366D17 /* WOPTApp.swift */,
+				97A6EFBF25D4F39900E7FC55 /* MainPage.swift */,
 				970720E625CC2E0300366D17 /* Assets.xcassets */,
 				970720EB25CC2E0300366D17 /* Info.plist */,
+				8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */,
 				970720E825CC2E0300366D17 /* Preview Content */,
 			);
 			path = WOPT;
@@ -208,6 +196,13 @@
 				9707210125CC2E0300366D17 /* Info.plist */,
 			);
 			path = WOPTUITests;
+			sourceTree = "<group>";
+		};
+		97A6EFA725D4F1E600E7FC55 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		9B620F8FAEAF7B1346B4092A /* Frameworks */ = {
@@ -458,11 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8746F09325D2D0B80066E67D /* SessionView.swift in Sources */,
-				8746F08B25D2D0620066E67D /* MainPageView.swift in Sources */,
+				97A6EFA925D4F29D00E7FC55 /* SessionView.swift in Sources */,
+				97A6EFB125D4F2B400E7FC55 /* MainPageView.swift in Sources */,
 				970720E525CC2E0200366D17 /* MealListView.swift in Sources */,
-				8746F07E25D2D0230066E67D /* WorkoutListView.swift in Sources */,
-				8746F08625D2D04E0066E67D /* RegisterView.swift in Sources */,
+				97A6EFC025D4F39900E7FC55 /* MainPage.swift in Sources */,
+				97A6EFBB25D4F33400E7FC55 /* WorkoutListView.swift in Sources */,
+				97A6EFB625D4F2E900E7FC55 /* RegisterView.swift in Sources */,
 				8746F06325D2AE3B0066E67D /* Meal.swift in Sources */,
 				970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */,
 			);

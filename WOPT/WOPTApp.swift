@@ -11,9 +11,12 @@ import Firebase
 
 @main
 struct WOPTApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            MealListView()
+            MainPage()
         }
     }
 }

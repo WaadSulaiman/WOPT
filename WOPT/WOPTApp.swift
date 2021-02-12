@@ -16,7 +16,7 @@ struct WOPTApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            MainPage()
+           RegisterView()
         }
     }
 }

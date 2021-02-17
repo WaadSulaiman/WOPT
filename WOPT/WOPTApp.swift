@@ -16,7 +16,8 @@ struct WOPTApp: App {
     }
     var body: some Scene {
         WindowGroup {
-           RegisterView()
+            RegisterView().environmentObject(SessionStore())
+            
         }
     }
 }

@@ -17,5 +17,6 @@ struct MainPage: View {
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
         MainPage()
+        
     }
 }

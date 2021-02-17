@@ -9,8 +9,25 @@ import SwiftUI
 
 struct SignInView: View {
     @State var email: String = ""
-    @State var losenord: String = ""
+    @State var password: String = ""
     @State var error: String = ""
+    @EnvironmentObject var session: SessionStore
+    
+    func signIn(){
+        session.signIn(email: email, password: password) {(result, error) in
+            if let error = error {
+                self.error = error.localizedDescription
+            } else {
+                self.email = ""
+                self.password = ""
+            }
+            
+        }
+    }
+    func getUser(){
+        session.listen()
+    }
+    
     
     
     var body: some View {
@@ -37,14 +54,14 @@ struct SignInView: View {
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color.black, lineWidth: 1))
                 
-                SecureField("Lösenord", text: $losenord)
+                SecureField("Lösenord", text: $password)
                     .font(.system(size: 14))
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color.black, lineWidth: 1))
             }
             .padding(.vertical, 48)
             
-            Button(action: loggaIn, label: {
+            Button(action: signIn, label: {
                 Text("Logga in")
                 .frame(minWidth: 0,  maxWidth: .infinity)
                 .frame(height: 50)
@@ -74,20 +91,42 @@ struct SignInView: View {
             
              
         }
+        .onAppear(perform: getUser)
         .padding(.horizontal, 32)
         
     }
 }
-func loggaIn(){
+
+        
+        
     
-}
+    
+
 
 struct SignUpView: View{
     @State var email: String = ""
-    @State var losenord: String = ""
+    @State var password: String = ""
     @State var error: String = ""
+    @EnvironmentObject var session: SessionStore
     
+    func signUp() {
+        session.signUp(email: email, password: password) { (result, error) in
+            if let error = error{
+                self.error = error.localizedDescription
+            }else {
+                self.email = ""
+                self.password = ""
+            }
+            
+        }
+    }
+    
+    func getUser(){
+        session.listen()
+    }
     var body: some View {
+        
+        
         
         VStack{
             Text("Registrera Dig")
@@ -104,7 +143,7 @@ struct SignUpView: View{
                     .background(RoundedRectangle(cornerRadius: 5) .strokeBorder(Color.black,lineWidth: 1))
                     .padding(.horizontal,30)
                 
-                SecureField("Lösenord", text: $losenord)
+                SecureField("Lösenord", text: $password)
                     .font(.system(size: 14))
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 5) .strokeBorder(Color.black,lineWidth: 1))
@@ -113,13 +152,21 @@ struct SignUpView: View{
             .padding(.vertical,64)
             
             
-            Text("Skapa konto")
+            Button(action: signUp){
+                Text("Skapa konto")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .frame(height:50)
+                    .foregroundColor(.white)
+                    .font(.system(size: 14, weight: .bold))
+                    .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                    .cornerRadius(10)            }
                 
         }
         
         Spacer()
         
-        
+            .onAppear(perform: getUser)
+
         
             .padding(.horizontal,32)
         
@@ -137,9 +184,9 @@ struct RegisterView: View {
 }
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            RegisterView()
-            RegisterView()
+    
+        RegisterView().environmentObject(SessionStore())
+            
         }
     }
-}
+

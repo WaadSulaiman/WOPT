@@ -8,11 +8,12 @@
 import Foundation
 
 struct Meal {
+    var id: String = UUID().uuidString
     
 
 // TODO: What to track
 var title: String
-var timer: Date
+var timer: String
 var completed: Bool
      
 }
@@ -20,11 +21,11 @@ var completed: Bool
 //TODO Create a collection of mock/testdata
 
 #if DEBUG
-let testDataTasks = [
-    Meal(title: "impelement the UI", timer: Date(), completed: true),
-    Meal(title: "Implemenet firebase", timer: Date(), completed: false),
-    Meal(title: "????", timer: Date(), completed: false),
-    Meal(title: "Profit!!", timer: Date(), completed: false)
+let testDataMeals = [
+    Meal(title: "impelement the UI", timer: "08:00", completed: true),
+    Meal(title: "Implemenet firebase", timer: "09:00", completed: false),
+    Meal(title: "????", timer: "??:??", completed: false),
+    Meal(title: "Profit!!", timer: "11:00", completed: false)
 ]
 #endif
 

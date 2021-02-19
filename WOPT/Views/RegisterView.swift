@@ -15,12 +15,16 @@ struct SignInView: View {
     
     func signIn(){
         session.signIn(email: email, password: password) {(result, error) in
+            
             if let error = error {
                 self.error = error.localizedDescription
+                
             } else {
+                
                 self.email = ""
                 self.password = ""
             }
+           
             
         }
     }
@@ -69,6 +73,8 @@ struct SignInView: View {
                     .font(.system(size: 14, weight: .bold))
                     .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(10)
+                
+                
                     
                     
                     

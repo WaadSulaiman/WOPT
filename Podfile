@@ -10,6 +10,7 @@ target 'WOPT' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift', '~> 7.5.0-beta'
 
   target 'WOPTTests' do
     inherit! :search_paths

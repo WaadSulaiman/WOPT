@@ -8,6 +8,7 @@ import Foundation
 import Combine
 
 class MealListViewModel: ObservableObject {
+    @Published var mealRepository = MealRepository()
     @Published var mealCellViewModels = [MealCellViewModel]()
     
     private var cancellables = Set<AnyCancellable>()
@@ -15,10 +16,14 @@ class MealListViewModel: ObservableObject {
     
     //TODO: Initializer where we operate our test data and convert test meals into mealscell view models
     init() {
-        self.mealCellViewModels = testDataMeals.map { meals in
-            MealCellViewModel(meals: meals)
-            
+        mealRepository.$meals
+         .map { meals in
+            meals.map { meals in
+                MealCellViewModel(meals: meals)
+            }
         }
+            .assign(to: \.mealCellViewModels, on: self)
+            .store(in: &cancellables)
         
     }
     func addMeal(meals: Meal) {

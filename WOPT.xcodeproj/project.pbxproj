@@ -13,7 +13,6 @@
 		8272EAA325CC3B9900144ABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */; };
 		82D55A3325DD69E500E1E2C3 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D55A3225DD69E500E1E2C3 /* SessionStore.swift */; };
 		8746F06325D2AE3B0066E67D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F06225D2AE3B0066E67D /* Meal.swift */; };
-		879D7CA025DFD48900532E3B /* MealRepository .swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D7C9F25DFD48900532E3B /* MealRepository .swift */; };
 		970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E225CC2E0200366D17 /* WOPTApp.swift */; };
 		970720E525CC2E0200366D17 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* MealListView.swift */; };
 		970720E725CC2E0300366D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970720E625CC2E0300366D17 /* Assets.xcassets */; };
@@ -24,6 +23,7 @@
 		97A6EFB625D4F2E900E7FC55 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFB525D4F2E900E7FC55 /* RegisterView.swift */; };
 		97A6EFBB25D4F33400E7FC55 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFBA25D4F33400E7FC55 /* WorkoutListView.swift */; };
 		97A6EFC025D4F39900E7FC55 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EFBF25D4F39900E7FC55 /* MainPage.swift */; };
+		97C5905225E67CBC00AC62BF /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C5905125E67CBC00AC62BF /* SessionRepository.swift */; };
 		97F4DF1C25DFB51C002CD659 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DF1B25DFB51C002CD659 /* SessionView.swift */; };
 		97F4DF2925DFB59A002CD659 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DF2825DFB59A002CD659 /* ExerciseModel.swift */; };
 		97F4DF3825DFB904002CD659 /* MealCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DF3725DFB904002CD659 /* MealCellViewModel.swift */; };
@@ -56,7 +56,6 @@
 		8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82D55A3225DD69E500E1E2C3 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		8746F06225D2AE3B0066E67D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		879D7C9F25DFD48900532E3B /* MealRepository .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MealRepository .swift"; path = "../../../MealRepository .swift"; sourceTree = "<group>"; };
 		8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT_WOPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720DF25CC2E0200366D17 /* WOPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720E225CC2E0200366D17 /* WOPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOPTApp.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		97A6EFB525D4F2E900E7FC55 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		97A6EFBA25D4F33400E7FC55 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
 		97A6EFBF25D4F39900E7FC55 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		97C5905125E67CBC00AC62BF /* SessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionRepository.swift; path = WOPT/Model/SessionRepository.swift; sourceTree = SOURCE_ROOT; };
 		97F4DF1B25DFB51C002CD659 /* SessionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		97F4DF2825DFB59A002CD659 /* ExerciseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
 		97F4DF3725DFB904002CD659 /* MealCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCellViewModel.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		879D7C9E25DFD46900532E3B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				879D7C9F25DFD48900532E3B /* MealRepository .swift */,
+				97C5905125E67CBC00AC62BF /* SessionRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -477,12 +477,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A6EFB125D4F2B400E7FC55 /* MainPageView.swift in Sources */,
+				97C5905225E67CBC00AC62BF /* SessionRepository.swift in Sources */,
 				970720E525CC2E0200366D17 /* MealListView.swift in Sources */,
 				97A6EFC025D4F39900E7FC55 /* MainPage.swift in Sources */,
 				97A6EFBB25D4F33400E7FC55 /* WorkoutListView.swift in Sources */,
 				97F4DF3825DFB904002CD659 /* MealCellViewModel.swift in Sources */,
 				97F4DF3D25DFB945002CD659 /* MealListViewModel.swift in Sources */,
-				879D7CA025DFD48900532E3B /* MealRepository .swift in Sources */,
 				82D55A3325DD69E500E1E2C3 /* SessionStore.swift in Sources */,
 				97F4DF1C25DFB51C002CD659 /* SessionView.swift in Sources */,
 				97A6EFB625D4F2E900E7FC55 /* RegisterView.swift in Sources */,

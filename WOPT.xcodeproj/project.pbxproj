@@ -12,6 +12,7 @@
 		59CF4987411E8088616D0428 /* Pods_WOPT_WOPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */; };
 		8272EAA325CC3B9900144ABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */; };
 		82D55A3325DD69E500E1E2C3 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D55A3225DD69E500E1E2C3 /* SessionStore.swift */; };
+		8744C8C825E7BED200937F2C /* MLW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744C8C725E7BED200937F2C /* MLW.swift */; };
 		8746F06325D2AE3B0066E67D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F06225D2AE3B0066E67D /* Meal.swift */; };
 		970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E225CC2E0200366D17 /* WOPTApp.swift */; };
 		970720E525CC2E0200366D17 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* MealListView.swift */; };
@@ -56,6 +57,7 @@
 		5728A9730D5C9D5E632AF184 /* Pods-WOPT-WOPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT-WOPTUITests.release.xcconfig"; path = "Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82D55A3225DD69E500E1E2C3 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		8744C8C725E7BED200937F2C /* MLW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLW.swift; sourceTree = "<group>"; };
 		8746F06225D2AE3B0066E67D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT_WOPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720DF25CC2E0200366D17 /* WOPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,10 +142,11 @@
 			isa = PBXGroup;
 			children = (
 				97F4DF1B25DFB51C002CD659 /* SessionView.swift */,
-				970720E425CC2E0200366D17 /* MealListView.swift */,
 				97A6EFBA25D4F33400E7FC55 /* WorkoutListView.swift */,
 				97A6EFB525D4F2E900E7FC55 /* RegisterView.swift */,
 				97A6EFB025D4F2B400E7FC55 /* MainPageView.swift */,
+				970720E425CC2E0200366D17 /* MealListView.swift */,
+				8744C8C725E7BED200937F2C /* MLW.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				82D55A3325DD69E500E1E2C3 /* SessionStore.swift in Sources */,
 				97F4DF1C25DFB51C002CD659 /* SessionView.swift in Sources */,
 				97A6EFB625D4F2E900E7FC55 /* RegisterView.swift in Sources */,
+				8744C8C825E7BED200937F2C /* MLW.swift in Sources */,
 				97C5907C25E684F000AC62BF /* MealRepository.swift in Sources */,
 				8746F06325D2AE3B0066E67D /* Meal.swift in Sources */,
 				970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */,

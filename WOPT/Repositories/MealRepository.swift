@@ -14,6 +14,10 @@ class MealRepository: ObservableObject {
     let db = Firestore.firestore()
 
     @Published var meals = [Meal]()
+    
+    init() {
+        loadData()
+    }
 
     func loadData() {
         db.collection("meals").addSnapshotListener { (querySnapshot, error) in
@@ -32,5 +36,14 @@ class MealRepository: ObservableObject {
         }
     }
 }
+    
+    func addMeal(_ meal: Meal) {
+        do {
+            let _ = try db.collection("meals").addDocument(from: meals)
+        }
+        catch {
+            fatalError("Unable to encode meals: \(error.localizedDescription)")
+        }
+    }
 
 }

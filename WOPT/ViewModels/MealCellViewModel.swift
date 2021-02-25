@@ -27,7 +27,7 @@ class MealCellViewModel: ObservableObject, Identifiable {
             .store(in: &cancellables)
         
         $meals
-        .map { meals in
+        .compactMap { meals in
             meals.id
         }
         .assign(to: \.id, on:self)

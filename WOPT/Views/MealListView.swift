@@ -4,7 +4,7 @@
 //
 //  Created by Waad on 2021-02-04.
 //
-import SwiftUI
+ import SwiftUI
 
 struct MealListView: View {
     @ObservedObject var mealListVM = MealListViewModel()
@@ -41,8 +41,7 @@ struct MealListView: View {
                             //TODO: Depending on if the addneditem is true or false present new cell
                             
                             if presentAddNewItem {
-                                MealCell(mealCellVM: MealCellViewModel(meals: Meal(title:"", timer:
-                                                                                    "", completed: false))) { meals in
+                                MealCell(mealCellVM: MealCellViewModel(meals: Meal(title:"", completed: false))) { meals in
                                     self.mealListVM.addMeal(meals: meals)
                                     self.presentAddNewItem.toggle()
                                 }
@@ -56,6 +55,7 @@ struct MealListView: View {
                 
                 
                 .navigationBarTitle("Meals")
+            
                 
                 
             }
@@ -110,3 +110,4 @@ struct MealCell: View {
         }
     }
 }
+

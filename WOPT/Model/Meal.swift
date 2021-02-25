@@ -6,14 +6,16 @@
 //
 
 import Foundation
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 struct Meal: Codable, Identifiable {
-    var id: String = UUID().uuidString
+  @DocumentID var id: String?
     
 
 // TODO: What to track
 var title: String
-var timer: String
+//var timer: String
 var completed: Bool
      
 }
@@ -22,10 +24,10 @@ var completed: Bool
 
 #if DEBUG
 let testDataMeals = [
-    Meal(title: "impelement the UI", timer: "08:00", completed: true),
-    Meal(title: "Implemenet firebase", timer: "09:00", completed: false),
-    Meal(title: "????", timer: "??:??", completed: false),
-    Meal(title: "Profit!!", timer: "11:00", completed: false)
+    Meal(title: "impelement the UI", completed: true),
+    Meal(title: "Implemenet firebase", completed: false),
+    Meal(title: "????", completed: false),
+    Meal(title: "Profit!!", completed: false)
 ]
 #endif
 

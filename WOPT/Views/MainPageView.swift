@@ -8,139 +8,178 @@
 import SwiftUI
 
 struct MainPageView: View {
+    let workouts = workoutsData
+    
     var body: some View {
         
-        VStack {
+     
+        
+        NavigationView {
             
-            
-            Text("WOPT")
-                .font(.largeTitle)
-                .foregroundColor(.blue)
-                .fontWeight(.heavy)
-                .padding(.top, 10)
+            VStack(alignment: .leading) {
                 
                 
-            
-            VStack {
-                ZStack {
-                    Image("gym-weights")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height: 200)
-                       
-                    
-                    VStack {
-                        
-                        Spacer()
-                            
-                        Text("Min Träningsplan")
-                            .font(.largeTitle)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .padding(.bottom, 30)
-
-                        
-                    }
-                    .padding()
-                    .frame(width: 400)
-                    .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5122357299)))
-                }
-                .frame(width: 370, height: 200)
-                .cornerRadius(20)
-                .clipped()
-                .shadow(radius: 8)
-                .padding(.top,5)
-                
-                
-                ZStack {
-                    Image("korean-bbq-and-restaurant-dining")
-                    
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height: 200)
-                        
-                    
-                    VStack{
-                    
-                    Text("Min Träningskost")
-                        .font(.largeTitle)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .padding(.top, 70)
-                        
-                }
-                    
-                    .frame(width:380,height: 200)
-                    .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5122357299)))
-                    
-                }
-                
-                .frame(width: 370, height: 200)
-                .cornerRadius(20)
-                .shadow(radius: 8)
-                .padding(.top, 10)
-                .clipped()
-                .padding(.bottom, 20)
-                
-                
-                Text("Veckans Träningsplan")
-                    .font(.largeTitle)
+                Text("WOPT")
+                    .font(.system(size: 30))
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
-                
-                }
-            
-            
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 30) {
+                    .padding(.horizontal,20)
+                    .padding(.top, 15)
                     
-                    ForEach(0..<7){ item in
+                    
+                    
+                
+                    
+                    
+                
+                VStack{
+                    
+                    NavigationLink(destination: SessionView()) {
                         
                         ZStack {
-                            Image("")
+                            Image("gym-weights")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(height: 200)
-                           
+                                
+                               
+                            
                             VStack {
                                 
                                 Spacer()
                                     
-                                Text("Måndag")
+                                Text("Min Träningsplan")
+                                    .font(.largeTitle)
                                     .fontWeight(.semibold)
                                     .foregroundColor(.white)
-                                    
-                                Text("Bröst & triceps")
-                                    .fontWeight(.regular)
-                                    .foregroundColor(.white)
-                                
+                                    .padding(.top, 30)
 
                                 
                             }
                             .padding()
-                            .frame(width: 150)
+                            .frame(width: 400)
                             .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5122357299)))
-                            
-                            
                         }
-                        .frame(width: 150, height: 200)
-                        .clipped()
+                        .frame(width: 360, height: 200)
                         .cornerRadius(20)
+                        .clipped()
                         .shadow(radius: 8)
+                        .padding()
                         
                     }
+                    
+                    
+                    NavigationLink(destination: MealListView()) {
+                        ZStack {
+                            Image("korean-bbq-and-restaurant-dining")
+                            
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(height: 200)
+                                
+                            
+                            VStack{
+                            
+                            Text("Min Träningskost")
+                                .font(.largeTitle)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .padding(.top, 110)
+                                
+                        }
+                            
+                            .frame(width:380,height: 200)
+                            .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5122357299)))
+                            
+                        }
+                        
+                        .frame(width: 360, height: 200)
+                        .cornerRadius(20)
+                        .shadow(radius: 8)
+                        .padding(.top,1)
+                        .clipped()
+                        
+                    }
+                    //.padding(.bottom, 30)
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                    }
+                VStack(alignment: .leading){
+                    Text("Veckans Träningsplan")
+                        .font(.system(size: 28))
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                        .padding(.top,20)
+                        .padding(.horizontal, 20)
+                    
                 }
+                
+                
+                
+                
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 30) {
+                        
+                        ForEach(workouts){ Workout in
+                            
+                            ZStack {
+                                Image(Workout.image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(height: 200)
+                               
+                                VStack {
+                                    
+                                    Spacer()
+                                        
+                                    Text(Workout.dag)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.white)
+                                        
+                                    Text(Workout.kroppsdel)
+                                        .fontWeight(.regular)
+                                        .foregroundColor(.white)
+                                    
+
+                                    
+                                }
+                                .padding()
+                                .frame(width: 150)
+                                .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5122357299)))
+                                
+                                
+                            }
+                            .frame(width: 150, height: 200)
+                            .clipped()
+                            .cornerRadius(20)
+                            .shadow(radius: 8)
+                            
+                        }
+                    }
+                    .padding(.bottom, 60)
+                    .padding()
+                    
+                }
+                .offset(x:0, y:-20)
+                
+              
+                Spacer()
+                
+                
+                
+                
+                
+                
+                
             }
-            
-          
-            Spacer()
-            
-            
-            
-            
-            
-            
             
         }
        
@@ -151,6 +190,7 @@ struct MainPageView: View {
     }
     
     
+    
 }
 
 struct MainPageView_Previews: PreviewProvider {
@@ -158,3 +198,35 @@ struct MainPageView_Previews: PreviewProvider {
         MainPageView()
     }
 }
+
+struct Workout: Identifiable {
+    
+    
+    var id = UUID()
+    var dag: String
+    var kroppsdel: String
+    var image: String
+    var routine: [String]
+    
+}
+
+let workoutsData = [
+Workout(dag: "Måndag", kroppsdel: "Bröst & triceps", image: "Working-Out-With-Chalk",
+        routine: ["Bänkpress", "Flies", "Dips"]),
+    
+Workout(dag: "Tisdag", kroppsdel: "Rygg & biceps", image:"one", routine: ["Chins","lat pulldown", "marklyft", "biceps curl"]),
+    
+Workout(dag: "Onsdag", kroppsdel: "Ben & Mage", image:"four", routine: ["Squats","BenSpark", "Utfallsteg", "Sittups"]),
+    
+Workout(dag: "Torsdag", kroppsdel: "Axlar ", image:"man-stretching", routine: ["Chins","lat pulldown", "marklyft", "biceps curl"]),
+
+Workout(dag: "Fredag", kroppsdel: "Armar", image:"three", routine: ["Dips","Curls", "Tricep Pushdown", "Hammer curls"]),
+    
+Workout(dag: "Lördag", kroppsdel: "Rest", image:"two", routine: ["rest"]),
+    
+Workout(dag: "Söndag", kroppsdel: "Rest", image:"fitness-weight-lifting", routine: ["rest"])
+
+
+
+
+    ]

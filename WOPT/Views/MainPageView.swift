@@ -14,7 +14,7 @@ struct MainPageView: View {
         
      
         
-        NavigationView {
+        
             
             VStack(alignment: .leading) {
                 
@@ -181,7 +181,7 @@ struct MainPageView: View {
                 
             }
             
-        }
+        
        
        
         

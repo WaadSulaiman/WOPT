@@ -20,7 +20,9 @@ class MealRepository: ObservableObject {
     }
 
     func loadData() {
-        db.collection("meals").addSnapshotListener { (querySnapshot, error) in
+        db.collection("meals")
+            .order(by: "createdTime")
+            .addSnapshotListener { (querySnapshot, error) in
             if let querySnapshot = querySnapshot {
                 self.meals = querySnapshot.documents.compactMap { document in
                     do {
@@ -37,7 +39,7 @@ class MealRepository: ObservableObject {
     }
 }
     
-    func addMeal(_ meal: Meal) {
+    func addMeal(_ meals: Meal) {
         do {
             let _ = try db.collection("meals").addDocument(from: meals)
         }
@@ -45,5 +47,17 @@ class MealRepository: ObservableObject {
             fatalError("Unable to encode meals: \(error.localizedDescription)")
         }
     }
+    func updateMeal(_ meals: Meal) {
+        if let mealID = meals.id {
+            do {
+                
+          try  db.collection("meals").document(mealID).setData(from: meals)
+            }
+            catch{
+                fatalError("Unable to encode meals: \(error.localizedDescription)")
+            }
+    }
+
+}
 
 }

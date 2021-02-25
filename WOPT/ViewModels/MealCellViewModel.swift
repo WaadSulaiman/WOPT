@@ -9,6 +9,7 @@ import Combine
 
 //TODO: Create a class that is observableobject so swift ui can observe any changes we make to the properties to the viewmodel
 class MealCellViewModel: ObservableObject, Identifiable {
+    @Published   var mealRepository = MealRepository()
     @Published var meals: Meal
     
     var id = ""
@@ -32,6 +33,15 @@ class MealCellViewModel: ObservableObject, Identifiable {
         }
         .assign(to: \.id, on:self)
         .store(in: &cancellables)
+        
+        
+        $meals
+            .dropFirst()
+            .debounce(for: 0.0, scheduler: RunLoop.main)
+            .sink {  meals in
+                self.mealRepository.updateMeal(meals)
+            }
+            .store(in: &cancellables)
     }
     
 }

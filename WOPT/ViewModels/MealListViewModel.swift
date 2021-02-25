@@ -27,7 +27,8 @@ class MealListViewModel: ObservableObject {
         
     }
     func addMeal(meals: Meal) {
-        let mealVM = MealCellViewModel(meals:meals)
-        self.mealCellViewModels.append(mealVM)
+        mealRepository.addMeal(meals)
+      //  let mealVM = MealCellViewModel(meals:meals)
+      //  self.mealCellViewModels.append(mealVM)
     }
 }

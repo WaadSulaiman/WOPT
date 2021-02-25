@@ -17,7 +17,7 @@ struct Meal: Codable, Identifiable {
 var title: String
 //var timer: String
 var completed: Bool
-     
+@ServerTimestamp var createdTime: Timestamp? // Timestamp for making sure all database is in sync 
 }
 
 //TODO Create a collection of mock/testdata

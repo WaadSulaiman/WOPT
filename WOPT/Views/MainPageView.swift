@@ -34,7 +34,7 @@ struct MainPageView: View {
                 
                 VStack{
                     
-                    NavigationLink(destination: SessionView()) {
+                    NavigationLink(destination: SessionView(today: "Måndag")) {
                         
                         ZStack {
                             Image("gym-weights")
@@ -66,7 +66,7 @@ struct MainPageView: View {
                         .shadow(radius: 8)
                         .padding()
                         
-                    }
+                    }.navigationBarBackButtonHidden(true)
                     
                     
                     NavigationLink(destination: MealListView()) {
@@ -128,8 +128,8 @@ struct MainPageView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 30) {
                         
-                        ForEach(workouts){ Workout in
-                            
+                        ForEach(workouts) { Workout in
+                            NavigationLink(destination: SessionView(today: Workout.dag)) {
                             ZStack {
                                 Image(Workout.image)
                                     .resizable()
@@ -156,7 +156,7 @@ struct MainPageView: View {
                                 .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5122357299)))
                                 
                                 
-                            }
+                            }}
                             .frame(width: 150, height: 200)
                             .clipped()
                             .cornerRadius(20)

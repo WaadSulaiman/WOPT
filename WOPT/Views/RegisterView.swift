@@ -17,11 +17,10 @@ struct SignInView: View {
     @State var isShowingMainPage = false
     
     func signIn(){
-        
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if let error = error {
-                return
-            }
+            if error != nil {
+               return
+           }
             
         isShowingMainPage = true
             

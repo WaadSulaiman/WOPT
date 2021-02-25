@@ -10,7 +10,7 @@ struct MealListView: View {
     @ObservedObject var mealListVM = MealListViewModel()
     let meals = testDataMeals
     
-    @State var presentAddNewItem = false
+   @State var presentAddNewItem = false
     
     
     var body: some View {
@@ -46,7 +46,9 @@ struct MealListView: View {
                                     self.presentAddNewItem.toggle()
                                 }
                             }
+                            
                         }
+                        
                         
                     }
                     
@@ -63,7 +65,13 @@ struct MealListView: View {
         
         
     }
-    
+    func addNewMeal() {
+        let meal = Meal(id:(UUID().uuidString) ,title: "", completed: false)
+        mealListVM.addMeal(meals: meal)
+      //  mealRepository.addMeal(meals)
+        
+        
+    }
     
 }
 

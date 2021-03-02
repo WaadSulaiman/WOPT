@@ -45,6 +45,13 @@ struct SessionView: View {
                         .onDelete(perform: self.delete)
                 }.navigationBarTitle(today)
                 .navigationBarItems(trailing: EditButton())
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button("Add") {
+                            
+                        }
+                    }
+                }
             }
         }.onAppear {
             getData()

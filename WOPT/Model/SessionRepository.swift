@@ -17,7 +17,7 @@ class SessionRepository {
     
     func postData(today: String, data: [Exercise]) {
         if(auth.currentUser != nil) {
-        firestore.collection("workouts").document(user).updateData([getCurrentDay(today: today): convertExerciseToArray(data: data)]) {
+            firestore.collection("workouts").document(auth.currentUser!.uid).updateData([getCurrentDay(today: today): convertExerciseToArray(data: data)]) {
             err in
             if let err = err {
                 print("Error updating document: \(err)")
@@ -30,7 +30,7 @@ class SessionRepository {
 
     func getData(today: String, data: @escaping ([Exercise]) -> Void ) {
         if(auth.currentUser != nil) {
-            firestore.collection("workouts").document(user).getDocument() {
+            firestore.collection("workouts").document(auth.currentUser!.uid).getDocument() {
                 document, err in
                 if let document = document {
                     if let arr = document.get(self.getCurrentDay(today: today)) as? Array<String>? {

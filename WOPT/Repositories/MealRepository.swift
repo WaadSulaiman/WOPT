@@ -8,10 +8,12 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import FirebaseAuth
 
 class MealRepository: ObservableObject {
 
     let db = Firestore.firestore()
+    let auth = Auth.auth()
 
     @Published var meals = [Meal]()
     
@@ -20,6 +22,9 @@ class MealRepository: ObservableObject {
     }
 
     func loadData() {
+        if auth.currentUser != nil {
+            
+        
         db.collection("meals")
             .order(by: "createdTime")
             .addSnapshotListener { (querySnapshot, error) in
@@ -37,6 +42,8 @@ class MealRepository: ObservableObject {
 
         }
     }
+            
+        }
 }
     
     func addMeal(_ meals: Meal) {

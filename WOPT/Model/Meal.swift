@@ -11,10 +11,13 @@ import FirebaseFirestoreSwift
 
 struct Meal: Codable, Identifiable {
   @DocumentID var id: String?
-    
+
+
+
 
 // TODO: What to track
 var title: String
+var kcal: Int
 //var timer: String
 var completed: Bool
 @ServerTimestamp var createdTime: Timestamp? // Timestamp for making sure all database is in sync 
@@ -24,10 +27,10 @@ var completed: Bool
 
 #if DEBUG
 let testDataMeals = [
-    Meal(title: "impelement the UI", completed: true),
-    Meal(title: "Implemenet firebase", completed: false),
-    Meal(title: "????", completed: false),
-    Meal(title: "Profit!!", completed: false)
+    Meal(title: "impelement the UI", kcal: 0, completed: true),
+    Meal(title: "Implemenet firebase", kcal: 0, completed: false),
+    Meal(title: "????", kcal : 0, completed: false),
+    Meal(title: "Profit!!", kcal: 0,completed: false)
 ]
 #endif
 

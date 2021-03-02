@@ -11,9 +11,19 @@ import Combine
 
 class SessionStore: ObservableObject{
     
-var didChange = PassthroughSubject<SessionStore, Never>()
+    var didChange = PassthroughSubject<SessionStore, Never>()
     @Published var session: User? {didSet {self.didChange.send(self) }}
+   
     var handle: AuthStateDidChangeListenerHandle?
+    
+  /*  @Binding var isShowingMainPage : Bool
+    
+    
+    init(isShowingMainPage: Binding<Bool>) {
+        self.isShowingMainPage = isShowingMainPage
+        
+    } */
+    
     
     func listen() {
         handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
@@ -37,13 +47,15 @@ var didChange = PassthroughSubject<SessionStore, Never>()
     
     
     
-    func signOut(){
+    func signOut() -> Bool{
         do {
             try Auth.auth().signOut()
             self.session = nil
         } catch{
             print("Error att logga ut")
+            
         }
+        return true
     }
     
     func unbind(){

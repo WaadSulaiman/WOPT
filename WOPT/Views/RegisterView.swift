@@ -19,26 +19,26 @@ struct SignInView: View {
     func signIn(){
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
-               return
-           }
+                return
+            }
             
-        isShowingMainPage = true
+            isShowingMainPage = true
             
         }
         
-       /* session.signIn(email: email, password: password) {(result, error) in
-            
-            if let error = error {
-                self.error = error.localizedDescription
-                
-            } else {
-                
-                self.email = ""
-                self.password = ""
-            }
-           
-            
-        }*/
+        /* session.signIn(email: email, password: password) {(result, error) in
+         
+         if let error = error {
+         self.error = error.localizedDescription
+         
+         } else {
+         
+         self.email = ""
+         self.password = ""
+         }
+         
+         
+         }*/
         
     }
     func getUser(){
@@ -51,21 +51,25 @@ struct SignInView: View {
         
         NavigationView {
             VStack{
+                Text("WOP")
+                    .font(.system(size: 42,weight: .bold))
+                    .foregroundColor(Color.blue)
+                    .padding(.top, 10)
+                
+                Spacer()
+                
                 VStack {
-                    Text("WOPT")
-                        .font(.system(size: 42,weight: .bold))
-                        .foregroundColor(Color.blue)
-                        .padding(.top)
+                    
                     
                     Text("Välkommen Tillbaka!")
-                        .font(.system(size: 32,weight: .heavy))
+                        .font(.title).fontWeight(.bold)
                         .foregroundColor(Color.blue)
                     
                     
                     Text("Logga in för att gå vidare")
                         .font(.system(size: 18, weight:.light))
                         .foregroundColor(Color.gray)
-                        
+                    
                     
                     VStack(spacing: 18){
                         TextField("Email adress", text: $email)
@@ -80,59 +84,63 @@ struct SignInView: View {
                     }
                     .padding(.vertical, 48)
                     
-                     
-                    NavigationLink(destination: MainPageView(), isActive: $isShowingMainPage){ EmptyView()}
-                    Button(action: signIn){
-                                    Text("Logga in")
-                                    .frame(minWidth: 0,  maxWidth: .infinity)
-                                    .frame(height: 50)
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 14, weight: .bold))
-                                        .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .leading, endPoint: .trailing))
-                                        .cornerRadius(10)
-                         }
-                        
-                            
-                           
-                            
-                            
-                                
-                                
-                                
-                            
-                        }
-                    }
-                    Spacer ()
-                        
-                    NavigationLink(destination: SignUpView()){
-                        HStack {
-                            Text ("Har du inget konto?")
-                                .font(.system(size:14,weight:.light))
-                                .foregroundColor(.primary)
-                            Text("Registrera dig")
-                                .font(.system(size:14, weight: .semibold))
-                         
-                        }
-                    }
-               
-                 
                     
-                     
+                    NavigationLink(destination: MainPageView(isShowingMainPage: $isShowingMainPage), isActive: $isShowingMainPage){ EmptyView()}
+                    Button(action: signIn){
+                        Text("Logga in")
+                            .frame(minWidth: 0,  maxWidth: .infinity)
+                            .frame(height: 50)
+                            .foregroundColor(.white)
+                            .font(.system(size: 14, weight: .bold))
+                            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                            .cornerRadius(10)
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 }
-                .onAppear(perform: getUser)
+                Spacer()
+                NavigationLink(destination: SignUpView()){
+                    HStack {
+                        Text ("Har du inget konto?")
+                            .font(.system(size:14,weight:.light))
+                            .foregroundColor(.primary)
+                        Text("Registrera dig")
+                            .font(.system(size:14, weight: .semibold))
+                        
+                    }
+                }
+                
+                
+                
+                
+            }
+            .navigationBarHidden(true)
+            .onAppear(perform: getUser)
             .padding(.horizontal, 32)
+            .padding(.bottom, 10)
         }
+        .navigationBarHidden(true)
         
-        
-        }
-        
-
-
-
-        
-        
+    }
     
     
+    
+}
+
+
+
+
+
+
+
+
 
 
 struct SignUpView: View{
@@ -161,47 +169,62 @@ struct SignUpView: View{
         
         
         VStack{
+            Spacer()
             Text("Registrera Dig")
-                .font(.system(size: 32,weight: .heavy))
+                .font(.title).fontWeight(.bold)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             
             Text("skapa ett konto för att komma igång")
                 .foregroundColor(.gray)
             
-            VStack(spacing: 18){
+            VStack{
                 TextField("Email adress", text: $email)
                     .font(.system(size: 14))
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 5) .strokeBorder(Color.black,lineWidth: 1))
-                    .padding(.horizontal,30)
-                
+                    //.padding(.horizontal,30)
+                    .padding(.vertical, 7)
                 SecureField("Lösenord", text: $password)
                     .font(.system(size: 14))
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 5) .strokeBorder(Color.black,lineWidth: 1))
-                    .padding(.horizontal,30)
+                  //  .padding(.horizontal,30)
+                                    Button(action: signUp){
+                    Text("Skapa konto")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .frame(height:50)
+                        .foregroundColor(.white)
+                        .font(.system(size: 14, weight: .bold))
+                        .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                        .cornerRadius(10)
+                        
+                }
+                                    .padding(EdgeInsets(top:50, leading: 0, bottom: 0, trailing: 0))
+                
             }
             .padding(.vertical,64)
+         //   .padding(.horizontal, 30)
             
             
-            Button(action: signUp){
-                Text("Skapa konto")
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .frame(height:50)
-                    .foregroundColor(.white)
-                    .font(.system(size: 14, weight: .bold))
-                    .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .leading, endPoint: .trailing))
-                    .cornerRadius(10)            }
-                
+            
+            Spacer()
+            
         }
+        .navigationBarTitle("WOP")
+        .navigationBarTitleDisplayMode(.inline)
         
-        Spacer()
         
+        
+       
+            
             .onAppear(perform: getUser)
-
-        
+            
+            
             .padding(.horizontal,32)
         
+    }
+    init() {
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.blue]
     }
     
 }
@@ -216,8 +239,8 @@ struct RegisterView: View {
 }
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-    
+        
         RegisterView().environmentObject(SessionStore())
-            
-        }
+        
     }
+}

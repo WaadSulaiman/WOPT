@@ -14,6 +14,8 @@
 		82D55A3325DD69E500E1E2C3 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D55A3225DD69E500E1E2C3 /* SessionStore.swift */; };
 		8744C8C825E7BED200937F2C /* MLW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744C8C725E7BED200937F2C /* MLW.swift */; };
 		8746F06325D2AE3B0066E67D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F06225D2AE3B0066E67D /* Meal.swift */; };
+		8756F7FC25EE916500DE0C80 /* SheetAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756F7FB25EE916500DE0C80 /* SheetAdd.swift */; };
+		8756F80125EEABC400DE0C80 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756F80025EEABC400DE0C80 /* MealModel.swift */; };
 		970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E225CC2E0200366D17 /* WOPTApp.swift */; };
 		970720E525CC2E0200366D17 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* MealListView.swift */; };
 		970720E725CC2E0300366D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970720E625CC2E0300366D17 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		82D55A3225DD69E500E1E2C3 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		8744C8C725E7BED200937F2C /* MLW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLW.swift; sourceTree = "<group>"; };
 		8746F06225D2AE3B0066E67D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		8756F7FB25EE916500DE0C80 /* SheetAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAdd.swift; sourceTree = "<group>"; };
+		8756F80025EEABC400DE0C80 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT_WOPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720DF25CC2E0200366D17 /* WOPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720E225CC2E0200366D17 /* WOPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOPTApp.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 				97F4DF2825DFB59A002CD659 /* ExerciseModel.swift */,
 				8746F06225D2AE3B0066E67D /* Meal.swift */,
 				82D55A3225DD69E500E1E2C3 /* SessionStore.swift */,
+				8756F80025EEABC400DE0C80 /* MealModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				97A6EFB025D4F2B400E7FC55 /* MainPageView.swift */,
 				970720E425CC2E0200366D17 /* MealListView.swift */,
 				8744C8C725E7BED200937F2C /* MLW.swift */,
+				8756F7FB25EE916500DE0C80 /* SheetAdd.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -493,6 +499,8 @@
 				97F4DF1C25DFB51C002CD659 /* SessionView.swift in Sources */,
 				97A6EFB625D4F2E900E7FC55 /* RegisterView.swift in Sources */,
 				8744C8C825E7BED200937F2C /* MLW.swift in Sources */,
+				8756F80125EEABC400DE0C80 /* MealModel.swift in Sources */,
+				8756F7FC25EE916500DE0C80 /* SheetAdd.swift in Sources */,
 				97C5907C25E684F000AC62BF /* MealRepository.swift in Sources */,
 				8746F06325D2AE3B0066E67D /* Meal.swift in Sources */,
 				970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */,

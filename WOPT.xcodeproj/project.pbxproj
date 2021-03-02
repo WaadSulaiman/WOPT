@@ -13,8 +13,6 @@
 		8272EAA325CC3B9900144ABF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */; };
 		82D55A3325DD69E500E1E2C3 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D55A3225DD69E500E1E2C3 /* SessionStore.swift */; };
 		8744C8C825E7BED200937F2C /* MLW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744C8C725E7BED200937F2C /* MLW.swift */; };
-		8746F06325D2AE3B0066E67D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746F06225D2AE3B0066E67D /* Meal.swift */; };
-		8756F7FC25EE916500DE0C80 /* SheetAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756F7FB25EE916500DE0C80 /* SheetAdd.swift */; };
 		8756F80125EEABC400DE0C80 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756F80025EEABC400DE0C80 /* MealModel.swift */; };
 		970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E225CC2E0200366D17 /* WOPTApp.swift */; };
 		970720E525CC2E0200366D17 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970720E425CC2E0200366D17 /* MealListView.swift */; };
@@ -30,8 +28,6 @@
 		97C5907C25E684F000AC62BF /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C5907B25E684F000AC62BF /* MealRepository.swift */; };
 		97F4DF1C25DFB51C002CD659 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DF1B25DFB51C002CD659 /* SessionView.swift */; };
 		97F4DF2925DFB59A002CD659 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DF2825DFB59A002CD659 /* ExerciseModel.swift */; };
-		97F4DF3825DFB904002CD659 /* MealCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DF3725DFB904002CD659 /* MealCellViewModel.swift */; };
-		97F4DF3D25DFB945002CD659 /* MealListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DF3C25DFB945002CD659 /* MealListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +56,6 @@
 		8272EAA225CC3B9900144ABF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82D55A3225DD69E500E1E2C3 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		8744C8C725E7BED200937F2C /* MLW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLW.swift; sourceTree = "<group>"; };
-		8746F06225D2AE3B0066E67D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		8756F7FB25EE916500DE0C80 /* SheetAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAdd.swift; sourceTree = "<group>"; };
 		8756F80025EEABC400DE0C80 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		8A109D1EA5537E50EE55BBAE /* Pods_WOPT_WOPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOPT_WOPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970720DF25CC2E0200366D17 /* WOPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +78,6 @@
 		97C5907B25E684F000AC62BF /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
 		97F4DF1B25DFB51C002CD659 /* SessionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		97F4DF2825DFB59A002CD659 /* ExerciseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
-		97F4DF3725DFB904002CD659 /* MealCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCellViewModel.swift; sourceTree = "<group>"; };
-		97F4DF3C25DFB945002CD659 /* MealListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModel.swift; sourceTree = "<group>"; };
 		C37C6DD9CCA2C15C94195B34 /* Pods-WOPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPTTests.debug.xcconfig"; path = "Target Support Files/Pods-WOPTTests/Pods-WOPTTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A151EAB355D2029D6DD1EA /* Pods-WOPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT.debug.xcconfig"; path = "Target Support Files/Pods-WOPT/Pods-WOPT.debug.xcconfig"; sourceTree = "<group>"; };
 		ED28EB7F308C394398625290 /* Pods-WOPT-WOPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOPT-WOPTUITests.debug.xcconfig"; path = "Target Support Files/Pods-WOPT-WOPTUITests/Pods-WOPT-WOPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				97F4DF2825DFB59A002CD659 /* ExerciseModel.swift */,
-				8746F06225D2AE3B0066E67D /* Meal.swift */,
 				82D55A3225DD69E500E1E2C3 /* SessionStore.swift */,
 				8756F80025EEABC400DE0C80 /* MealModel.swift */,
 			);
@@ -152,7 +143,6 @@
 				97A6EFB025D4F2B400E7FC55 /* MainPageView.swift */,
 				970720E425CC2E0200366D17 /* MealListView.swift */,
 				8744C8C725E7BED200937F2C /* MLW.swift */,
-				8756F7FB25EE916500DE0C80 /* SheetAdd.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				879D7C9E25DFD46900532E3B /* Repositories */,
-				97F4DF3625DFB7F6002CD659 /* ViewModels */,
 				8746F06125D2AE0A0066E67D /* Model */,
 				8746F06825D2AFCB0066E67D /* Views */,
 				970720E225CC2E0200366D17 /* WOPTApp.swift */,
@@ -229,15 +218,6 @@
 				9707210125CC2E0300366D17 /* Info.plist */,
 			);
 			path = WOPTUITests;
-			sourceTree = "<group>";
-		};
-		97F4DF3625DFB7F6002CD659 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				97F4DF3725DFB904002CD659 /* MealCellViewModel.swift */,
-				97F4DF3C25DFB945002CD659 /* MealListViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		9B620F8FAEAF7B1346B4092A /* Frameworks */ = {
@@ -493,16 +473,12 @@
 				970720E525CC2E0200366D17 /* MealListView.swift in Sources */,
 				97A6EFC025D4F39900E7FC55 /* MainPage.swift in Sources */,
 				97A6EFBB25D4F33400E7FC55 /* WorkoutListView.swift in Sources */,
-				97F4DF3825DFB904002CD659 /* MealCellViewModel.swift in Sources */,
-				97F4DF3D25DFB945002CD659 /* MealListViewModel.swift in Sources */,
 				82D55A3325DD69E500E1E2C3 /* SessionStore.swift in Sources */,
 				97F4DF1C25DFB51C002CD659 /* SessionView.swift in Sources */,
 				97A6EFB625D4F2E900E7FC55 /* RegisterView.swift in Sources */,
 				8744C8C825E7BED200937F2C /* MLW.swift in Sources */,
 				8756F80125EEABC400DE0C80 /* MealModel.swift in Sources */,
-				8756F7FC25EE916500DE0C80 /* SheetAdd.swift in Sources */,
 				97C5907C25E684F000AC62BF /* MealRepository.swift in Sources */,
-				8746F06325D2AE3B0066E67D /* Meal.swift in Sources */,
 				970720E325CC2E0200366D17 /* WOPTApp.swift in Sources */,
 				97F4DF2925DFB59A002CD659 /* ExerciseModel.swift in Sources */,
 			);

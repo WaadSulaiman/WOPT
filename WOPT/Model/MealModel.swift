@@ -7,18 +7,14 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct MealModel : Identifiable {
+struct Meal : Identifiable {
+    var id: String
     var title: String
     var kcal: Int
-    //var timer: String
-    var completed: Bool
-    @ServerTimestamp var createdTime: Timestamp? // Timestamp for making sure all database is in sync
-    }
-    
-    //Add more complicated stuff later if you want.
+
     
 }
 
-class ExerciseStore : ObservableObject {
-    @Published var exercises = [Exercise]()
+class MealStore : ObservableObject {
+    @Published var meals = [Meal]()
 }

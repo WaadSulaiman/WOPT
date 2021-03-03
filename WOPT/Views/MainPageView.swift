@@ -10,18 +10,36 @@ import SwiftUI
 struct MainPageView: View {
     let workouts = workoutsData
     
-    
-    var components = DateComponents()
-    
     private let sessionStore = SessionStore()
     @Binding var isShowingMainPage : Bool
  
+    private func getCurrentDay() -> String {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        dateFormatter.timeStyle = . full
+        
+        let dateString = dateFormatter.string(from: date)
+        let dateArr = dateString.split(separator: ",")
+        
+        switch dateArr[0] {
+        case "Sonday":
+            return "Söndag"
+        case "Monday":
+            return "Måndag"
+        case "Tuesday":
+            return "Tisdag"
+        case "Wednesday":
+            return "Onsdag"
+        case "Thursday":
+            return "Torsdag"
+        case "Friday":
+            return "Fredag"
+        default:
+            return "Lördag"
+        }
+    }
     var body: some View {
-        
-        
-        
-        
-        // emil@gmail.com
     ScrollView {
         HStack {
             Spacer()
@@ -59,7 +77,7 @@ struct MainPageView: View {
             
             //VStack{
             
-            NavigationLink(destination: SessionView(today: "Måndag")) {
+            NavigationLink(destination: SessionView(today: getCurrentDay())) {
                 
                 ZStack {
                     Image("gym-weights")

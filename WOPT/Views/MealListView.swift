@@ -11,27 +11,33 @@ struct MealListView: View {
     @State var newMeal: String = ""
     @State var newMealKcal: String = ""
     private var totalKcal = 0
-    
+    @Environment(\.presentationMode)
+    var presentationmMode
     var searchBar : some View {
-        VStack(alignment: .leading){
-            Text("Lägg till en ny måltid").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/).padding(.bottom, 7)
+        VStack(alignment: .center){
+            Text("Måltider")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(.blue)
+            Text("Lägg till en ny måltid").foregroundColor(.black).padding(.bottom, 7)
             HStack {
-                TextField("titel", text: self.$newMeal)
+                TextField("Titel", text: self.$newMeal)
                     .font(.system(size: 14))
                     .padding(12)
-                    .background(RoundedRectangle(cornerRadius: 5) .strokeBorder(Color.gray,lineWidth: 1))
-                TextField("kalorier", text: self.$newMealKcal).keyboardType(.numberPad)
+                
+               
+                TextField("Kcal", text: self.$newMealKcal).keyboardType(.numberPad)
                     .frame(width: 70)
                     .font(.system(size: 14))
                     .padding(12)
-                    .background(RoundedRectangle(cornerRadius: 5) .strokeBorder(Color.gray,lineWidth: 1))
+                    
             
             Button(action: self.addNewMeal, label: {
                 Text("lägg till")
             })}
             HStack {
                 Spacer()
-                Text("total kalorier: \(calculateKcal())").bold().padding(EdgeInsets(top: 20, leading: 0, bottom: 10, trailing: 0)).font(.title)
+                Text("Totala kalorier: \(calculateKcal())").padding(EdgeInsets(top: 20, leading: 0, bottom: 10, trailing: 0)).font(.largeTitle).foregroundColor(.blue)
                 Spacer()
             }
         }
@@ -74,12 +80,27 @@ struct MealListView: View {
                         }
                     }.onMove(perform: self.move)
                     .onDelete(perform: self.delete)
-                }.navigationBarItems(trailing: EditButton()).navigationBarBackButtonHidden(true)
+                }.navigationBarItems(trailing: EditButton())
+              
+                .toolbar {
+                                    ToolbarItem(placement: .navigationBarLeading) {
+                                        Button("< Back", action: {
+                                                                                    self
+                                                                                        .presentationmMode
+                                                                                        .wrappedValue
+                                                                                        .dismiss()
+                                                                                })
+
+                                    }
+
+
+                                }
 
             }
         }.onAppear {
             getData()
         }
+        .navigationBarHidden(true)
     }
     
     func move(from source : IndexSet, to destination : Int) {

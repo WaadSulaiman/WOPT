@@ -9,14 +9,20 @@ import SwiftUI
 
 struct MainPageView: View {
     let workouts = workoutsData
+    
+    
+    var components = DateComponents()
+    
     private let sessionStore = SessionStore()
-    @Binding var isShowingMainPage : Bool 
+    @Binding var isShowingMainPage : Bool
+ 
     var body: some View {
         
         
         
         
         // emil@gmail.com
+    ScrollView {
         HStack {
             Spacer()
             Button("Logga ut", action: {
@@ -31,7 +37,7 @@ struct MainPageView: View {
         VStack {
             
             
-            Text("WOPT")
+            Text("WOP")
                 .font(.system(size: 30))
                 .fontWeight(.bold)
                 .foregroundColor(.blue)
@@ -67,7 +73,7 @@ struct MainPageView: View {
                         
                         Spacer()
                         
-                        Text("Min Träningsplan")
+                        Text("Dagens Träningsplan")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -163,9 +169,7 @@ struct MainPageView: View {
                                         .fontWeight(.semibold)
                                         .foregroundColor(.white)
                                     
-                                    Text(Workout.kroppsdel)
-                                        .fontWeight(.regular)
-                                        .foregroundColor(.white)
+                                
                                     
                                     
                                     
@@ -205,7 +209,8 @@ struct MainPageView: View {
         
         
         
-        
+        }
+    .navigationBarHidden(true)
         
     }
     
@@ -224,27 +229,26 @@ struct Workout: Identifiable {
     
     var id = UUID()
     var dag: String
-    var kroppsdel: String
+    //var kroppsdel: String
     var image: String
-    var routine: [String]
+   // var routine: [String]
     
 }
 
 let workoutsData = [
-    Workout(dag: "Måndag", kroppsdel: "Bröst & triceps", image: "Working-Out-With-Chalk",
-            routine: ["Bänkpress", "Flies", "Dips"]),
+    Workout(dag: "Måndag", image: "Working-Out-With-Chalk"),
     
-    Workout(dag: "Tisdag", kroppsdel: "Rygg & biceps", image:"one", routine: ["Chins","lat pulldown", "marklyft", "biceps curl"]),
+    Workout(dag: "Tisdag",  image:"one"),
     
-    Workout(dag: "Onsdag", kroppsdel: "Ben & Mage", image:"four", routine: ["Squats","BenSpark", "Utfallsteg", "Sittups"]),
+    Workout(dag: "Onsdag", image:"four"),
     
-    Workout(dag: "Torsdag", kroppsdel: "Axlar ", image:"man-stretching", routine: ["Chins","lat pulldown", "marklyft", "biceps curl"]),
+    Workout(dag: "Torsdag", image:"man-stretching"),
     
-    Workout(dag: "Fredag", kroppsdel: "Armar", image:"three", routine: ["Dips","Curls", "Tricep Pushdown", "Hammer curls"]),
+    Workout(dag: "Fredag", image:"three"),
     
-    Workout(dag: "Lördag", kroppsdel: "Rest", image:"two", routine: ["rest"]),
+    Workout(dag: "Lördag",  image:"two"),
     
-    Workout(dag: "Söndag", kroppsdel: "Rest", image:"fitness-weight-lifting", routine: ["rest"])
+    Workout(dag: "Söndag",  image:"fitness-weight-lifting")
     
     
     

@@ -10,13 +10,23 @@ struct SessionView: View {
     @ObservedObject var exerciseStore = ExerciseStore()
     @State var newToDo : String = ""
     var today: String
+    @Environment(\.presentationMode)
+    var presentationmMode
+    
     
     var searchBar : some View {
-        HStack {
-            TextField("Lägg till en ny övning", text: self.$newToDo)
-            Button(action: self.addNewToDo, label: {
-                Text("lägg till")
-            })
+        VStack {
+            Text(today)
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(.blue)
+                
+            HStack {
+                TextField("Lägg till en ny övning", text: self.$newToDo)
+                Button(action: self.addNewToDo, label: {
+                    Text("lägg till")
+                })
+            }
         }
     }
     
@@ -43,12 +53,36 @@ struct SessionView: View {
                         Text(exercise.toDoItem)
                     }.onMove(perform: self.move)
                         .onDelete(perform: self.delete)
-                }.navigationBarTitle(today)
+                }
                 .navigationBarItems(trailing: EditButton())
+                .toolbar {
+                                    ToolbarItem(placement: .navigationBarLeading) {
+                                        Button("< Back"
+                                               , action: {
+                                            
+                                                                                    self
+                                                                                        .presentationmMode
+                                                                                        .wrappedValue
+                                                                                        .dismiss()
+                                                                                        
+                                                    })
+                        
+                                            
+                                    
+
+                                    }
+
+
+                                }
+                                        
+                
+            
             }
+            
         }.onAppear {
             getData()
         }
+        .navigationBarHidden(true)
     }
 
     func move(from source : IndexSet, to destination : Int) {

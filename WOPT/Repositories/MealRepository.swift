@@ -10,7 +10,7 @@ class MealRepository {
     
     func postData(data: [Meal]) {
         if(auth.currentUser != nil) {
-            firestore.collection("meals").document(auth.currentUser!.uid).updateData(["meals" : convertMealToArray(data: data)]) {
+            firestore.collection("meals").document(auth.currentUser!.uid).setData(["meals" : convertMealToArray(data: data)]) {
             err in
             if let err = err {
                 print("Error updating document: \(err)")

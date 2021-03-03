@@ -16,9 +16,10 @@ struct WOPTApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            //MealListView()
+           // MealListView()
             RegisterView().environmentObject(SessionStore())
-            //MainPageView()
+           // MainPageView(isShowingMainPage: .constant(true))
+            // SessionView(today: "Måndag")
         }
     }
 }

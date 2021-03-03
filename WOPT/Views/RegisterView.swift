@@ -121,7 +121,7 @@ struct SignInView: View {
                 
                 
             }
-            .navigationBarHidden(true)
+            .navigationBarHidden(false)
             .onAppear(perform: getUser)
             .padding(.horizontal, 32)
             .padding(.bottom, 10)

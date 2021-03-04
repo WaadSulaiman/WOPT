@@ -4,21 +4,31 @@
 
 import SwiftUI
 import Combine
+import UserNotifications
 
 struct MealListView: View {
     private let repository = MealRepository()
     @ObservedObject var mealStore = MealStore()
     @State var newMeal: String = ""
     @State var newMealKcal: String = ""
+    @State private var isSheetShowing = false
     private var totalKcal = 0
     @Environment(\.presentationMode)
     var presentationmMode
     var searchBar : some View {
-        VStack(alignment: .center){
-            Text("Måltider")
-                .font(.largeTitle)
-                .bold()
-                .foregroundColor(.blue)
+        VStack(alignment: .leading
+        ){
+            HStack {
+                Text("Måltider")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.blue)
+                Button("Notiser") {
+                    isSheetShowing = true
+                    
+                    
+                }
+            }
             Text("Lägg till en ny måltid").foregroundColor(.black).padding(.bottom, 7)
             HStack {
                 TextField("Titel", text: self.$newMeal)
@@ -41,6 +51,9 @@ struct MealListView: View {
                 Spacer()
             }
         }
+        .sheet(isPresented: $isSheetShowing, content: {
+            NotisSheet()
+        })
     }
     
     func calculateKcal() -> String {
@@ -81,6 +94,7 @@ struct MealListView: View {
                     }.onMove(perform: self.move)
                     .onDelete(perform: self.delete)
                 }.navigationBarItems(trailing: EditButton())
+                
               
                 .toolbar {
                                     ToolbarItem(placement: .navigationBarLeading) {
@@ -114,6 +128,8 @@ struct MealListView: View {
     }
     
 }
+
+
 
 struct MealListView_Previews: PreviewProvider {
     static var previews: some View {

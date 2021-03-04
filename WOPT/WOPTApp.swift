@@ -20,6 +20,7 @@ struct WOPTApp: App {
             RegisterView().environmentObject(SessionStore())
            // MainPageView(isShowingMainPage: .constant(true))
             // SessionView(today: "Måndag")
+            //NotisSheet()
         }
     }
 }
